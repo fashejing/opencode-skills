@@ -14,8 +14,8 @@ Create stunning Remotion animations, open in your favorite editor, and preview i
 ## What is RemotionMAX-WIN?
 
 RemotionMAX-WIN combines three steps into one:
-1. **Create** - Generate animation code based on your theme
-2. **Open** - Launch in VS Code or Cursor
+1. **Create** - Generate animation code based on your theme(s)
+2. **Open** - Launch in VS Code (default) or Cursor
 3. **Preview** - Start live preview server
 
 ## Usage
@@ -27,186 +27,114 @@ Simply trigger the skill:
 remotionmax-win
 ```
 
-The skill will ask for:
-1. **Animation theme** - What kind of animation do you want?
-2. **Project name** - Name your project
-3. **Editor choice** - VS Code or Cursor
-4. **Project location** - Defaults to `C:\Users\ASUS\Documents\emowowo remotion`
-
 ### Command Line Mode
 
 ```powershell
-# With all options
-.\launch.ps1 -Theme "neon cyberpunk logo" -Name "cyberpunk-animation" -Editor "cursor"
+# Single animation
+.\launch.ps1 -Name "my-animation" -Theme "neon glow logo"
+
+# Multiple animations in one project
+.\launch.ps1 -Name "my-animations" -Animations @("neon glow logo", "pixel art", "retro gaming")
+
+# With VS Code (default)
+.\launch.ps1 -Name "my-project" -Animations @("cyberpunk glitch", "particle explosion")
+
+# With Cursor
+.\launch.ps1 -Name "my-project" -Animations @("rainbow wave") -Editor "cursor"
 ```
+
+## Key Features
+
+- **Multiple animations per project**: Create several animations and they will all be in the same project
+- **VS Code as default editor**: Opens in VS Code by default (change with `-Editor cursor`)
+- **Auto-detect animation style**: Based on theme keywords (pixel, retro, glitch, particle, wave, neon)
+- **Smart naming**: Converts themes to PascalCase component names
 
 ## Animation Themes
 
 When you describe your animation theme, RemotionMAX-WIN can create:
 
-| Theme Type | Examples |
-|:---|:---|
-| **Logo Animations** | Neon glow, pixel morph, rainbow glitch |
-| **Text Effects** | Wave text, holographic, color wave |
-| **Particles** | Fireworks, floating orbs, star field |
-| **Abstract** | Geometric shapes, morphing blobs |
-| **Retro** | 8-bit pixel art, arcade style |
-| **Futuristic** | Cyberpunk, holographic, sci-fi HUD |
+| Theme Type | Keywords | Examples |
+|:---|:---|:---|
+| **Neon** | (default) | neon glow, holographic, glow logo |
+| **Pixel** | pixel, retro, 8-bit | pixel art, retro gaming, 8-bit |
+| **Glitch** | glitch, corrupt | glitch effect, corrupt text |
+| **Particle** | particle, firework | particle explosion, firework |
+| **Wave** | wave, text | text wave, rainbow wave |
+| **Geometric** | geometric, shape | geometric shapes, rotating forms |
 
 ## Animation Code Examples
 
-### Neon Glow Logo
+### Neon Glow (default)
 ```tsx
-import { useCurrentFrame, interpolate, spring } from 'remotion';
+const scale = spring({ fps, frame, config: { damping: 12, stiffness: 100 } });
+const opacity = interpolate(frame, [0, 30, 120, 150], [0, 1, 1, 0]);
 
-export const NeonLogo: React.FC = () => {
-  const frame = useCurrentFrame();
-  const scale = spring({ frame, fps: 30, config: { damping: 10 } });
-
-  return (
-    <div style={{ backgroundColor: '#0a0a0f', flex: 1, justifyContent: 'center', alignItems: 'center' }}>
-      <div style={{
-        fontSize: 120,
-        color: '#ff00ff',
-        textShadow: '0 0 20px #ff00ff, 0 0 40px #ff00ff, 0 0 60px #ff00ff',
-        transform: `scale(${scale})`,
-      }}>
-        EMOWOWO
-      </div>
-    </div>
-  );
-};
+// Glowing text with particle background
+<div style={{
+  fontSize: 120,
+  color: '#fff',
+  textShadow: '0 0 30px rgba(255, 0, 255, 0.8), 0 0 60px rgba(0, 255, 255, 0.6)',
+  transform: `scale(${scale})`,
+  opacity,
+}}>
+  EMOWOWO
+</div>
 ```
 
-### Rainbow Glitch Effect
+### Pixel Art Style
 ```tsx
-import { useCurrentFrame, interpolate } from 'remotion';
-
-export const RainbowGlitch: React.FC = () => {
-  const frame = useCurrentFrame();
-  const glitchX = interpolate(frame, [0, 10, 20], [0, -10, 0]);
-
-  return (
-    <div style={{ backgroundColor: '#000', flex: 1 }}>
-      <div style={{ transform: `translateX(${glitchX}px)` }}>
-        {/* Pixel art logo here */}
-      </div>
-    </div>
-  );
-};
+// Grid background with pixel blocks
+// Monospace font with text-shadow glow
+// Floating colored square particles
 ```
 
-### Particle System
+### Glitch Effect
 ```tsx
-export const Particles: React.FC = () => {
-  const frame = useCurrentFrame();
-
-  return (
-    <div style={{ backgroundColor: '#0f0f1a', flex: 1, position: 'relative' }}>
-      {Array.from({ length: 50 }).map((_, i) => {
-        const x = (i * 137 + frame * 2) % 1920;
-        const y = 540 + Math.sin(frame * 0.05 + i) * 300;
-        return (
-          <div key={i} style={{
-            position: 'absolute',
-            left: x,
-            top: y,
-            width: 8,
-            height: 8,
-            borderRadius: '50%',
-            backgroundColor: ['#ff0080', '#00ff80', '#8000ff'][i % 3],
-            boxShadow: '0 0 10px currentColor',
-          }} />
-        );
-      })}
-    </div>
-  );
-};
-```
-
-## Core Remotion APIs
-
-For complete API reference, see [references/remotion-api.md](references/remotion-api.md).
-
-### useCurrentFrame()
-Get current frame number (0-indexed):
-```tsx
-const frame = useCurrentFrame();
-```
-
-### interpolate()
-Map values between ranges with easing:
-```tsx
-const opacity = interpolate(frame, [0, 30], [0, 1]);
-const x = interpolate(frame, [0, 100], [0, 500], {
-  extrapolateLeft: 'clamp',
-  extrapolateRight: 'clamp',
-  easing: Easing.bezier(0.4, 0, 0.2, 1),
-});
-```
-
-### spring()
-Physics-based animation:
-```tsx
-const scale = spring({
-  fps,
-  frame,
-  config: { damping: 10, mass: 1, stiffness: 100 },
-  delay: 10,
-});
-```
-
-### Easing Functions
-```tsx
-Easing.linear
-Easing.ease
-Easing.in(Easing.ease)
-Easing.out(Easing.ease)
-Easing.inOut(Easing.ease)
-Easing.bounce
-Easing.elastic(1)
-Easing.back(0.5)
+// RGB split effect
+// Random glitch blocks
+// Scanline overlay
 ```
 
 ## Workflow
 
 ```
-1. You describe your animation theme
+1. You describe your animation theme(s)
        ↓
-2. RemotionMAX-WIN generates animation code options
+2. RemotionMAX-WIN generates animation code
        ↓
-3. You select your preferred animation
+3. All animations added to same project
        ↓
-4. Project is created
+4. Project opens in VS Code
        ↓
-5. Animation code is written to the project
+5. Preview server starts automatically
        ↓
-6. You choose editor (VS Code or Cursor)
-       ↓
-7. Editor opens with the project
-       ↓
-8. Preview server starts automatically
-       ↓
-9. Open the preview URL to see your animation!
+6. Open http://localhost:3456 to preview!
 ```
 
 ## After Launch
 
 ### Preview
 - Open http://localhost:3456 (or the port shown)
-- See your animation in real-time
+- Select different compositions to preview each animation
 - Edit code and watch changes instantly
 
 ### Render
 ```powershell
-# Render as MP4
-npx remotion render MyVideo out/video.mp4
+# List all compositions
+npx remotion compositions
+
+# Render single animation
+npx remotion render NeonGlowLogo out.mp4
+
+# Render all as separate files
+npx remotion render
 
 # Render as GIF
-npx remotion render MyVideo out/anim.gif --codec=gif
+npx remotion render <CompositionId> out.gif --codec=gif
 
 # Render single frame
-npx remotion still MyVideo out/frame.png --frame=30
+npx remotion still <CompositionId> out.png --frame=30
 ```
 
 ## Project Structure
@@ -214,8 +142,12 @@ npx remotion still MyVideo out/frame.png --frame=30
 ```
 {project-name}/
 ├── src/
-│   ├── index.tsx          # Root with registerRoot()
-│   └── {AnimationName}.tsx  # Your animation
+│   ├── index.tsx              # Root with all Compositions
+│   ├── Root.tsx               # Same as index.tsx
+│   └── animations/
+│       ├── NeonGlowLogo.tsx   # Animation component
+│       ├── PixelArtRetro.tsx  # Another animation
+│       └── index.ts           # Exports all animations
 ├── public/
 ├── package.json
 ├── tsconfig.json
@@ -224,10 +156,10 @@ npx remotion still MyVideo out/frame.png --frame=30
 
 ## Tips
 
-- **Real-time preview** - Changes to code update instantly in the browser
-- **Composition selector** - Click the Remotion Studio logo to switch between compositions
-- **Frame-by-frame** - Use the timeline to scrub through frames
-- **Export** - When happy, render to MP4 or GIF
+- **Multiple animations**: Use `-Animations @("theme1", "theme2", "theme3")` to create several at once
+- **Composition selector**: Click the Remotion Studio logo to switch between animations
+- **Frame-by-frame**: Use the timeline to scrub through frames
+- **Export**: When happy, render to MP4 or GIF
 
 ## Resources
 
