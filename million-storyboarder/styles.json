@@ -1,0 +1,514 @@
+{
+  "styles": [
+    {
+      "id": "wang_kar_wai",
+      "name": "王家卫风格",
+      "director": "王家卫",
+      "region": "亚洲/香港",
+      "visual_features": {
+        "color_scheme": "高饱和度、霓虹色、暖黄+冷蓝对比",
+        "lighting": "霓虹灯光、柔光、逆光剪影",
+        "composition": "镜像、框架式、慢动作",
+        "camera_movement": "慢推拉、跟拍、手持轻微抖动"
+      },
+      "emotional_tone": "孤独、怀旧、浪漫、诗意",
+      "common_elements": [
+        "城市夜景",
+        "霓虹灯招牌",
+        "雨中场景",
+        "慢镜头",
+        "旁白独白",
+        "倒叙回忆"
+      ],
+      "color_palette": [
+        "#FF6B6B",
+        "#4ECDC4",
+        "#FFE66D",
+        "#1A535C",
+        "#FF9F1C"
+      ],
+      "shot_style": [
+        "慢镜头特写",
+        "手持跟拍",
+        "镜像构图",
+        "框架式构图"
+      ]
+    },
+    {
+      "id": "miyazaki_hayao",
+      "name": "宫崎骏风格",
+      "director": "宫崎骏",
+      "region": "亚洲/日本",
+      "visual_features": {
+        "color_scheme": "自然色系、清新明亮、柔和色调",
+        "lighting": "自然光、晨光、暮光",
+        "composition": "黄金分割、动态平衡、前景层次",
+        "camera_movement": "平滑推拉、飞行视角、环绕拍摄"
+      },
+      "emotional_tone": "温馨、奇幻、治愈、自然",
+      "common_elements": [
+        "自然景观",
+        "飞行器",
+        "奇幻生物",
+        "蒸汽朋克元素",
+        "云层与天空",
+        "植物与森林"
+      ],
+      "color_palette": [
+        "#A8D5BA",
+        "#FFB84D",
+        "#87CEEB",
+        "#98D8C8",
+        "#F7DC6F"
+      ],
+      "shot_style": [
+        "自然景观远景",
+        "飞行镜头",
+        "动态跟拍",
+        "层次分明的全景"
+      ]
+    },
+    {
+      "id": "koreeda_hirokazu",
+      "name": "是枝裕和风格",
+      "director": "是枝裕和",
+      "region": "亚洲/日本",
+      "visual_features": {
+        "color_scheme": "自然低饱和、生活化色彩、温暖柔和",
+        "lighting": "自然光、室内柔光、窗外光线",
+        "composition": "平视角度、生活化构图、空间关系",
+        "camera_movement": "固定机位、轻微跟拍、自然手持"
+      },
+      "emotional_tone": "温情、真实、日常、细腻",
+      "common_elements": [
+        "家庭聚餐",
+        "日常生活场景",
+        "自然表情",
+        "室内空间",
+        "季节变化",
+        "人与人互动"
+      ],
+      "color_palette": [
+        "#E8D5C4",
+        "#D4A373",
+        "#A3B18A",
+        "#6B705C",
+        "#DDA15E"
+      ],
+      "shot_style": [
+        "平视中景",
+        "生活化跟拍",
+        "室内固定机位",
+        "自然表情特写"
+      ]
+    },
+    {
+      "id": "ang_lee",
+      "name": "李安风格",
+      "director": "李安",
+      "region": "亚洲/西方融合",
+      "visual_features": {
+        "color_scheme": "东西方融合、细腻层次、情感化色调",
+        "lighting": "戏剧性光效、自然与人工光结合",
+        "composition": "对称构图、深度层次、人物关系",
+        "camera_movement": "平滑运动、节奏缓慢、情感跟拍"
+      },
+      "emotional_tone": "细腻、深刻、文化碰撞、人性探讨",
+      "common_elements": [
+        "文化冲突场景",
+        "细腻情感表达",
+        "自然环境与内心",
+        "仪式感场景",
+        "跨文化元素",
+        "沉默与对话"
+      ],
+      "color_palette": [
+        "#7B68EE",
+        "#20B2AA",
+        "#BC8F8F",
+        "#F4A460",
+        "#87CEEB"
+      ],
+      "shot_style": [
+        "文化场景全景",
+        "细腻情感特写",
+        "对称构图",
+        "深度层次中景"
+      ]
+    },
+    {
+      "id": "bong_joon_ho",
+      "name": "奉俊昊风格",
+      "director": "奉俊昊",
+      "region": "亚洲/韩国",
+      "visual_features": {
+        "color_scheme": "现实主义+超现实、冷暖对比、强烈对比",
+        "lighting": "戏剧性对比、现实光效、反差强烈",
+        "composition": "阶层对比、空间压迫感、镜面对称",
+        "camera_movement": "手持跟拍、俯仰视角、节奏变化"
+      },
+      "emotional_tone": "黑色幽默、社会讽刺、阶层冲突、荒诞",
+      "common_elements": [
+        "阶层对比场景",
+        "地下室、楼梯",
+        "雨水与潮湿",
+        "食物与餐桌",
+        "社会符号",
+        "戏剧性反转"
+      ],
+      "color_palette": [
+        "#2C3E50",
+        "#E74C3C",
+        "#3498DB",
+        "#F39C12",
+        "#95A5A6"
+      ],
+      "shot_style": [
+        "阶层对比构图",
+        "地下室/楼梯场景",
+        "手持跟拍",
+        "戏剧性仰俯镜头"
+      ]
+    },
+    {
+      "id": "nolan_christopher",
+      "name": "克里斯托弗·诺兰风格",
+      "director": "克里斯托弗·诺兰",
+      "region": "欧美/英国",
+      "visual_features": {
+        "color_scheme": "冷色调、现实感强、层次丰富",
+        "lighting": "自然光+人工光、戏剧性对比、时间线区分",
+        "composition": "宏大场景、人物关系、空间深度",
+        "camera_movement": "IMAX宽画幅、平滑运动、时间线切换"
+      },
+      "emotional_tone": "宏大、复杂、时间迷宫、理性探索",
+      "common_elements": [
+        "宏大场景",
+        "时间线交织",
+        "建筑与空间",
+        "爆炸与崩溃",
+        "角色关系网络",
+        "理性与情感冲突"
+      ],
+      "color_palette": [
+        "#34495E",
+        "#2ECC71",
+        "#9B59B6",
+        "#1ABC9C",
+        "#95A5A6"
+      ],
+      "shot_style": [
+        "IMAX宽画幅场景",
+        "时间线切换",
+        "宏大场景",
+        "复杂构图中景"
+      ]
+    },
+    {
+      "id": "tarantino_quentin",
+      "name": "昆汀·塔伦蒂诺风格",
+      "director": "昆汀·塔伦蒂诺",
+      "region": "欧美/美国",
+      "visual_features": {
+        "color_scheme": "复古暖色、高饱和、电影感",
+        "lighting": "戏剧性光效、阴影对比、复古质感",
+        "composition": "复古构图、人物中心、空间压迫",
+        "camera_movement": "固定机位、慢镜头、快速剪辑"
+      },
+      "emotional_tone": "暴力美学、黑色幽默、复古怀旧、戏剧冲突",
+      "common_elements": [
+        "对话场景",
+        "暴力瞬间",
+        "复古场景",
+        "音乐蒙太奇",
+        "血液与暴力",
+        "经典致敬"
+      ],
+      "color_palette": [
+        "#C0392B",
+        "#D35400",
+        "#8E44AD",
+        "#27AE60",
+        "#E74C3C"
+      ],
+      "shot_style": [
+        "复古对话场景",
+        "暴力特写",
+        "慢镜头",
+        "固定机位"
+      ]
+    },
+    {
+      "id": "anderson_wes",
+      "name": "韦斯·安德森风格",
+      "director": "韦斯·安德森",
+      "region": "欧美/美国",
+      "visual_features": {
+        "color_scheme": "糖果色、粉彩色系、高度协调",
+        "lighting": "均匀光线、柔和光效、无强烈对比",
+        "composition": "中心对称、网格构图、复古对称",
+        "camera_movement": "固定机位、直线推拉、对称运动"
+      },
+      "emotional_tone": "复古、童话、幽默、荒诞",
+      "common_elements": [
+        "对称场景",
+        "复古布景",
+        "糖果色彩",
+        "异域场景",
+        "怪诞角色",
+        "童话叙事"
+      ],
+      "color_palette": [
+        "#F7DC6F",
+        "#BB8FCE",
+        "#85C1E9",
+        "#F8B195",
+        "#6BB5A7"
+      ],
+      "shot_style": [
+        "中心对称构图",
+        "糖果色场景",
+        "复古布景",
+        "固定机位"
+      ]
+    },
+    {
+      "id": "fincher_david",
+      "name": "大卫·芬奇风格",
+      "director": "大卫·芬奇",
+      "region": "欧美/美国",
+      "visual_features": {
+        "color_scheme": "暗色调、冷蓝色、低对比",
+        "lighting": "低对比度、侧光、阴影丰富",
+        "composition": "框架式、压迫感、空间深度",
+        "camera_movement": "慢推拉、跟拍、缓慢手持"
+      },
+      "emotional_tone": "阴暗、悬疑、心理惊悚、道德灰色",
+      "common_elements": [
+        "阴暗场景",
+        "侦探线索",
+        "心理暗示",
+        "阴影与黑暗",
+        "道德灰色地带",
+        "悬疑氛围"
+      ],
+      "color_palette": [
+        "#2C3E50",
+        "#1ABC9C",
+        "#95A5A6",
+        "#34495E",
+        "#7F8C8D"
+      ],
+      "shot_style": [
+        "阴暗场景构图",
+        "框架式构图",
+        "缓慢推拉",
+        "阴影光影"
+      ]
+    },
+    {
+      "id": "spielberg_steven",
+      "name": "斯蒂文·斯皮尔伯格风格",
+      "director": "斯蒂文·斯皮尔伯格",
+      "region": "欧美/美国",
+      "visual_features": {
+        "color_scheme": "温暖明亮、电影感强、情感化色调",
+        "lighting": "自然光+戏剧光、黄金时刻、情感化光线",
+        "composition": "黄金分割、人物关系、宏大场景",
+        "camera_movement": "平滑运动、情感跟拍、IMAX宽画幅"
+      },
+      "emotional_tone": "温情、震撼、奇观、情感共鸣",
+      "common_elements": [
+        "家庭场景",
+        "奇幻元素",
+        "宏大奇观",
+        "儿童视角",
+        "情感高潮",
+        "英雄旅程"
+      ],
+      "color_palette": [
+        "#FFD700",
+        "#FF6B6B",
+        "#4ECDC4",
+        "#FFE66D",
+        "#1A535C"
+      ],
+      "shot_style": [
+        "家庭场景中景",
+        "宏大奇观全景",
+        "儿童视角",
+        "情感特写"
+      ]
+    },
+    {
+      "id": "cyberpunk",
+      "name": "赛博朋克风格",
+      "director": "类型片",
+      "region": "类型片",
+      "visual_features": {
+        "color_scheme": "霓虹色、暗夜背景、高对比",
+        "lighting": "霓虹灯光、多彩光线、对比强烈",
+        "composition": "拥挤空间、科技元素、垂直层次",
+        "camera_movement": "快速移动、科技感、未来感"
+      },
+      "emotional_tone": "未来感、科技、反乌托邦、疏离",
+      "common_elements": [
+        "霓虹灯",
+        "高科技装备",
+        "城市夜景",
+        "机器人/AI",
+        "反乌托邦符号",
+        "未来交通工具"
+      ],
+      "color_palette": [
+        "#FF00FF",
+        "#00FFFF",
+        "#FF0080",
+        "#8000FF",
+        "#00FF80"
+      ],
+      "shot_style": [
+        "霓虹灯夜景",
+        "科技元素特写",
+        "拥挤城市场景",
+        "未来感构图"
+      ]
+    },
+    {
+      "id": "film_noir",
+      "name": "黑色电影风格",
+      "director": "类型片",
+      "region": "类型片",
+      "visual_features": {
+        "color_scheme": "黑白、暗色调、高对比",
+        "lighting": "低角度光、侧光、阴影强烈",
+        "composition": "框架式、空间压迫、人物孤立",
+        "camera_movement": "固定机位、慢镜头、阴影构图"
+      },
+      "emotional_tone": "阴郁、犯罪、道德灰色、悬疑",
+      "common_elements": [
+        "雨中街道",
+        "侦探场景",
+        "阴影与黑暗",
+        "犯罪现场",
+        "烟雾与阴影",
+        "道德困境"
+      ],
+      "color_palette": [
+        "#2C3E50",
+        "#34495E",
+        "#95A5A6",
+        "#7F8C8D",
+        "#5D6D7E"
+      ],
+      "shot_style": [
+        "雨中街道构图",
+        "阴影光影",
+        "框架式构图",
+        "低角度光"
+      ]
+    },
+    {
+      "id": "new_hollywood",
+      "name": "新好莱坞风格",
+      "director": "类型片",
+      "region": "类型片",
+      "visual_features": {
+        "color_scheme": "自然写实、时代色彩、社会批判",
+        "lighting": "自然光、写实光效、手持光效",
+        "composition": "现实构图、社会场景、人物关系",
+        "camera_movement": "手持跟拍、纪实风格、自然运动"
+      },
+      "emotional_tone": "反叛、现实主义、社会批判、人性",
+      "common_elements": [
+        "社会场景",
+        "反叛符号",
+        "现实人物",
+        "社会问题",
+        "暴力与冲突",
+        "时代印记"
+      ],
+      "color_palette": [
+        "#D35400",
+        "#7F8C8D",
+        "#27AE60",
+        "#C0392B",
+        "#E67E22"
+      ],
+      "shot_style": [
+        "社会场景全景",
+        "手持跟拍",
+        "写实构图",
+        "反叛符号特写"
+      ]
+    },
+    {
+      "id": "french_new_wave",
+      "name": "新浪潮风格",
+      "director": "类型片",
+      "region": "类型片",
+      "visual_features": {
+        "color_scheme": "跳脱色彩、艺术感强、实验性",
+        "lighting": "自然光+实验光、打破常规",
+        "composition": "打破常规、跳跃构图、实验性",
+        "camera_movement": "快速剪辑、跳跃剪辑、打破常规"
+      },
+      "emotional_tone": "反叛、实验、艺术、创新",
+      "common_elements": [
+        "跳跃剪辑",
+        "实验场景",
+        "艺术符号",
+        "打破常规",
+        "角色独白",
+        "元电影元素"
+      ],
+      "color_palette": [
+        "#E74C3C",
+        "#3498DB",
+        "#F39C12",
+        "#9B59B6",
+        "#1ABC9C"
+      ],
+      "shot_style": [
+        "跳跃剪辑",
+        "实验构图",
+        "艺术符号",
+        "快速运动"
+      ]
+    },
+    {
+      "id": "surrealism",
+      "name": "超现实主义风格",
+      "director": "类型片",
+      "region": "类型片",
+      "visual_features": {
+        "color_scheme": "梦幻色彩、超现实对比、象征性",
+        "lighting": "梦幻光线、超现实光效、象征性",
+        "composition": "梦境逻辑、象征构图、超现实空间",
+        "camera_movement": "梦幻运动、超现实移动、象征性运动"
+      },
+      "emotional_tone": "梦境、象征、哲学、潜意识",
+      "common_elements": [
+        "超现实元素",
+        "梦境符号",
+        "哲学意象",
+        "潜意识表达",
+        "象征场景",
+        "荒诞元素"
+      ],
+      "color_palette": [
+        "#9B59B6",
+        "#3498DB",
+        "#1ABC9C",
+        "#F39C12",
+        "#E74C3C"
+      ],
+      "shot_style": [
+        "超现实构图",
+        "梦境场景",
+        "象征性光影",
+        "梦幻运动"
+      ]
+    }
+  ]
+}

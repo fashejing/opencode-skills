@@ -1,0 +1,460 @@
+{
+  "tones": [
+    {
+      "id": "high_key",
+      "name": "高调",
+      "category": "明暗对比",
+      "description": "画面明亮、对比度低、色彩清新",
+      "characteristics": {
+        "lighting": "明亮光线、柔和阴影、高曝光",
+        "contrast": "低对比度、层次丰富",
+        "color": "明亮清新、色彩饱和",
+        "mood": "希望、轻松、快乐、清新"
+      },
+      "suitable_genres": [
+        "爱情片",
+        "青春片",
+        "喜剧片",
+        "儿童片",
+        "音乐片"
+      ],
+      "color_palette": [
+        "#FFFFFF",
+        "#FFF9E6",
+        "#FFE66D",
+        "#87CEEB",
+        "#98FB98"
+      ],
+      "camera_settings": {
+        "exposure": "+1 to +2",
+        "contrast": "low",
+        "saturation": "high"
+      },
+      "examples": [
+        "蓝天白云的场景",
+        "阳光明媚的午后",
+        "儿童游乐场",
+        "婚礼现场",
+        "海滩度假"
+      ]
+    },
+    {
+      "id": "low_key",
+      "name": "低调",
+      "category": "明暗对比",
+      "description": "画面暗沉、对比度高、色彩压抑",
+      "characteristics": {
+        "lighting": "暗淡光线、深重阴影、低曝光",
+        "contrast": "高对比度、层次分明",
+        "color": "暗沉压抑、色彩低饱和",
+        "mood": "神秘、压抑、恐惧、悲剧"
+      },
+      "suitable_genres": [
+        "恐怖片",
+        "惊悚片",
+        "悬疑片",
+        "黑色电影",
+        "犯罪片"
+      ],
+      "color_palette": [
+        "#2C3E50",
+        "#1A1A1A",
+        "#34495E",
+        "#7F8C8D",
+        "#5D6D7E"
+      ],
+      "camera_settings": {
+        "exposure": "-1 to -2",
+        "contrast": "high",
+        "saturation": "low"
+      },
+      "examples": [
+        "夜晚小巷",
+        "地下室",
+        "废弃建筑",
+        "暴风雨中",
+        "犯罪现场"
+      ]
+    },
+    {
+      "id": "normal_contrast",
+      "name": "正常对比",
+      "category": "明暗对比",
+      "description": "画面平衡、对比度适中、自然真实",
+      "characteristics": {
+        "lighting": "自然光线、平衡阴影、正常曝光",
+        "contrast": "正常对比度、层次平衡",
+        "color": "自然真实、色彩协调",
+        "mood": "平衡、真实、自然、平静"
+      },
+      "suitable_genres": [
+        "剧情片",
+        "纪录片",
+        "家庭片",
+        "社会片",
+        "文艺片"
+      ],
+      "color_palette": [
+        "#95A5A6",
+        "#7F8C8D",
+        "#BDC3C7",
+        "#AAB7B8",
+        "#D5D8DC"
+      ],
+      "camera_settings": {
+        "exposure": "0",
+        "contrast": "normal",
+        "saturation": "normal"
+      },
+      "examples": [
+        "日常对话场景",
+        "家庭聚会",
+        "办公室",
+        "学校教室",
+        "街头日常生活"
+      ]
+    },
+    {
+      "id": "cool_tones",
+      "name": "冷色调",
+      "category": "色彩方案",
+      "description": "以蓝、绿、紫为主，给人科技、冷静感",
+      "characteristics": {
+        "lighting": "偏冷光线、蓝色调光源",
+        "contrast": "适中偏低",
+        "color": "蓝绿紫为主、偏冷",
+        "mood": "科技、理性、冷静、孤独"
+      },
+      "suitable_genres": [
+        "科幻片",
+        "悬疑片",
+        "惊悚片",
+        "心理片",
+        "动作片"
+      ],
+      "color_palette": [
+        "#3498DB",
+        "#2980B9",
+        "#1ABC9C",
+        "#16A085",
+        "#9B59B6"
+      ],
+      "camera_settings": {
+        "white_balance": "cool",
+        "saturation": "medium",
+        "tint": "-10 to -20"
+      },
+      "examples": [
+        "未来科技场景",
+        "夜晚都市",
+        "医院",
+        "实验室",
+        "深海场景"
+      ]
+    },
+    {
+      "id": "warm_tones",
+      "name": "暖色调",
+      "category": "色彩方案",
+      "description": "以红、橙、黄为主，给人温暖、活力感",
+      "characteristics": {
+        "lighting": "偏暖光线、橙色调光源",
+        "contrast": "适中",
+        "color": "红橙黄为主、偏暖",
+        "mood": "温暖、活力、激情、怀旧"
+      },
+      "suitable_genres": [
+        "爱情片",
+        "青春片",
+        "怀旧片",
+        "家庭片",
+        "音乐片"
+      ],
+      "color_palette": [
+        "#E74C3C",
+        "#C0392B",
+        "#F39C12",
+        "#D35400",
+        "#E67E22"
+      ],
+      "camera_settings": {
+        "white_balance": "warm",
+        "saturation": "medium",
+        "tint": "+10 to +20"
+      },
+      "examples": [
+        "日落场景",
+        "老照片质感",
+        "家庭聚餐",
+        "咖啡馆",
+        "秋天街道"
+      ]
+    },
+    {
+      "id": "monochrome",
+      "name": "单色",
+      "category": "色彩方案",
+      "description": "黑白或单一色系，经典、复古、艺术感",
+      "characteristics": {
+        "lighting": "强调光影对比",
+        "contrast": "高对比度",
+        "color": "黑白或单一色系",
+        "mood": "经典、复古、艺术、高级"
+      },
+      "suitable_genres": [
+        "黑色电影",
+        "复古片",
+        "文艺片",
+        "历史片",
+        "艺术片"
+      ],
+      "color_palette": [
+        "#000000",
+        "#2C3E50",
+        "#7F8C8D",
+        "#BDC3C7",
+        "#FFFFFF"
+      ],
+      "camera_settings": {
+        "saturation": "0",
+        "contrast": "high",
+        "desaturate": "100%"
+      },
+      "examples": [
+        "黑白电影质感",
+        "复古照片",
+        "历史场景",
+        "艺术表达",
+        "极简主义"
+      ]
+    },
+    {
+      "id": "high_saturation",
+      "name": "高饱和",
+      "category": "色彩方案",
+      "description": "色彩鲜艳、充满活力、能量感强",
+      "characteristics": {
+        "lighting": "明亮光线、强调色彩",
+        "contrast": "适中",
+        "color": "色彩鲜艳、高饱和度",
+        "mood": "活力、青春、能量、兴奋"
+      },
+      "suitable_genres": [
+        "青春片",
+        "音乐片",
+        "喜剧片",
+        "动漫改编",
+        "广告片"
+      ],
+      "color_palette": [
+        "#FF0066",
+        "#00FF66",
+        "#6600FF",
+        "#FF6600",
+        "#00FFFF"
+      ],
+      "camera_settings": {
+        "saturation": "+20 to +40",
+        "vibrance": "+30 to +50",
+        "contrast": "medium"
+      },
+      "examples": [
+        "音乐视频",
+        "青春活力场景",
+        "动漫风格",
+        "糖果色世界",
+        "嘉年华"
+      ]
+    },
+    {
+      "id": "low_saturation",
+      "name": "低饱和",
+      "category": "色彩方案",
+      "description": "色彩柔和、低调、成熟、内敛",
+      "characteristics": {
+        "lighting": "柔和光线",
+        "contrast": "适中偏低",
+        "color": "色彩柔和、低饱和度",
+        "mood": "成熟、忧郁、内敛、平静"
+      },
+      "suitable_genres": [
+        "文艺片",
+        "家庭片",
+        "怀旧片",
+        "纪录片",
+        "剧情片"
+      ],
+      "color_palette": [
+        "#D5D8DC",
+        "#AAB7B8",
+        "#7F8C8D",
+        "#5D6D7E",
+        "#3E4849"
+      ],
+      "camera_settings": {
+        "saturation": "-20 to -40",
+        "vibrance": "-30 to -50",
+        "contrast": "low"
+      },
+      "examples": [
+        "老电影质感",
+        "忧郁场景",
+        "回忆场景",
+        "日常生活",
+        "内敛情感"
+      ]
+    },
+    {
+      "id": "natural_light",
+      "name": "自然光",
+      "category": "光线风格",
+      "description": "阳光、月光、真实自然",
+      "characteristics": {
+        "lighting": "自然光源、真实光线",
+        "shadow": "自然阴影、真实感强",
+        "color": "自然色彩、真实还原",
+        "mood": "真实、自然、日常、生活化"
+      },
+      "suitable_genres": [
+        "纪录片",
+        "家庭片",
+        "社会片",
+        "文艺片",
+        "现实主义片"
+      ],
+      "color_palette": [
+        "#FFFFFF",
+        "#FFE4C4",
+        "#FFDAB9",
+        "#E0FFFF",
+        "#F0FFF0"
+      ],
+      "camera_settings": {
+        "white_balance": "auto",
+        "natural_light": true,
+        "artificial_light": false
+      },
+      "examples": [
+        "户外自然光",
+        "室内自然光",
+        "日出日落",
+        "月光场景",
+        "日常生活"
+      ]
+    },
+    {
+      "id": "cinematic_lighting",
+      "name": "电影光效",
+      "category": "光线风格",
+      "description": "戏剧性光效、电影感、精心设计",
+      "characteristics": {
+        "lighting": "人工光源、精心设计",
+        "shadow": "戏剧性阴影、塑造氛围",
+        "color": "电影感色调、情感化",
+        "mood": "戏剧性、电影感、情感化、精心设计"
+      },
+      "suitable_genres": [
+        "剧情片",
+        "悬疑片",
+        "爱情片",
+        "惊悚片",
+        "艺术片"
+      ],
+      "color_palette": [
+        "#2C3E50",
+        "#34495E",
+        "#7F8C8D",
+        "#95A5A6",
+        "#BDC3C7"
+      ],
+      "camera_settings": {
+        "artificial_light": true,
+        "dramatic_lighting": true,
+        "cinematic": true
+      },
+      "examples": [
+        "精心设计的场景",
+        "戏剧性光线",
+        "情感表达场景",
+        "高潮场景",
+        "艺术性场景"
+      ]
+    },
+    {
+      "id": "cyberpunk_lighting",
+      "name": "赛博朋克光效",
+      "category": "光线风格",
+      "description": "霓虹灯、多彩光线、未来科技感",
+      "characteristics": {
+        "lighting": "霓虹灯光、多彩光线",
+        "shadow": "深色阴影、高对比",
+        "color": "霓虹色彩、科技感强",
+        "mood": "未来、科技、赛博朋克、反乌托邦"
+      },
+      "suitable_genres": [
+        "科幻片",
+        "赛博朋克片",
+        "反乌托邦片",
+        "动作片",
+        "未来主义片"
+      ],
+      "color_palette": [
+        "#FF00FF",
+        "#00FFFF",
+        "#FF0080",
+        "#8000FF",
+        "#00FF80"
+      ],
+      "camera_settings": {
+        "neon_lighting": true,
+        "cyberpunk": true,
+        "high_contrast": true
+      },
+      "examples": [
+        "霓虹灯夜景",
+        "未来城市",
+        "高科技实验室",
+        "赛博朋克街道",
+        "反乌托邦世界"
+      ]
+    },
+    {
+      "id": "dark_style",
+      "name": "暗黑风格",
+      "category": "光线风格",
+      "description": "极端对比、阴影主导、压抑恐怖",
+      "characteristics": {
+        "lighting": "极度暗淡、少量光线",
+        "shadow": "深重阴影、极端对比",
+        "color": "暗色调、低饱和",
+        "mood": "恐怖、压抑、悬疑、危险"
+      },
+      "suitable_genres": [
+        "恐怖片",
+        "惊悚片",
+        "悬疑片",
+        "犯罪片",
+        "心理恐怖片"
+      ],
+      "color_palette": [
+        "#000000",
+        "#1A1A1A",
+        "#2C3E50",
+        "#34495E",
+        "#5D6D7E"
+      ],
+      "camera_settings": {
+        "exposure": "-2 to -3",
+        "contrast": "extreme",
+        "shadows": "heavy"
+      },
+      "examples": [
+        "恐怖地下室",
+        "废弃医院",
+        "犯罪现场",
+        "心理恐惧场景",
+        "悬疑谜团"
+      ]
+    }
+  ]
+}
