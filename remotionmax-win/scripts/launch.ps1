@@ -6,7 +6,7 @@ param(
     [string]$Theme = "",
     [string]$Editor = "",
     [string]$Template = "hello-world",
-    [string]$ProjectPath = "$env:USERPROFILE\Documents\emowowo remotion",
+    [string]$ProjectPath = "E:\remotion emowowo",
     [int]$Port = 3456,
     [switch]$Auto,
     [string[]]$Animations = @()
@@ -78,7 +78,7 @@ if (-not $Auto) {
 # Set defaults
 if ([string]::IsNullOrEmpty($Name)) { $Name = "my-animation" }
 if ([string]::IsNullOrEmpty($Editor)) { $Editor = "vscode" }
-if ([string]::IsNullOrEmpty($ProjectPath)) { $ProjectPath = "$env:USERPROFILE\Documents\emowowo remotion" }
+if ([string]::IsNullOrEmpty($ProjectPath)) { $ProjectPath = "E:\remotion emowowo" }
 if ($Animations.Count -eq 0 -or [string]::IsNullOrEmpty($Animations[0])) { $Animations = @("neon glow logo") }
 
 $FullPath = "$ProjectPath\$Name"
